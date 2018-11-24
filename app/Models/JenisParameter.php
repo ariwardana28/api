@@ -58,11 +58,11 @@ class JenisParameter extends Model
     public function units()
     {
         //return $this->belongsToMany(\App\Models\Unit::class, 'hasil');
-         return $this->belongsToMany(\App\Models\Unit::class, 'hasil')
-                        ->using(\App\Models\Hasil::class)
-                        ->withPivot([
-                            'value'
-                        ])->withTimestamps();
+        return $this->belongsToMany(\App\Models\Unit::class,'hasil')
+            ->using(\App\Models\Hasil::class)
+            ->withPivot([
+                'value'
+            ])->withTimestamps();
     }
 
     /**
