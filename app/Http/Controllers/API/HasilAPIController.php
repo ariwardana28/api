@@ -5,7 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Requests\API\CreateHasilAPIRequest;
 use App\Http\Requests\API\UpdateHasilAPIRequest;
 use App\Models\Hasil;
-use App\Models\Jenisparameter;
+use App\Models\JenisParameter;
 use App\Models\Unit;
 use App\Repositories\HasilRepository;
 use Illuminate\Http\Request;
